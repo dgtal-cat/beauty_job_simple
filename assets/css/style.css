@@ -197,7 +197,7 @@ body, .wrapper {
     position: absolute;
     transform: rotate(90deg);
     right: 48px;
-    top: 40vh;
+    top: 400px;
 }
 
 .social_link {
