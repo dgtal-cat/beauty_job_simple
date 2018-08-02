@@ -1,14 +1,35 @@
+@font-face {
+    font-family: Mosk;
+    src: url("../fonts/Mosk Medium 500.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Mosk;
+    src: url("../fonts/Mosk Semi-Bold 600.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Mosk';
+    src: url('../fonts/Mosk Normal 400.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
 @font-face{
     font-family: 'Mosk';
     src: url('../fonts/Mosk Bold 700.ttf');
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Mosk';
     src: url('../fonts/Mosk Ultra-Bold 900.ttf');
-    font-weight: bold;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -27,19 +48,33 @@ ul li {
     margin: 0;
 }
 
+body {
+    background: url(../img/main_background_01.jpg) no-repeat 350px center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body, .wrapper {
     background-color: #161618;
     color: #E5E5E5;
+    font-weight: 500;
 }
 
 .wrapper {
-    width: 1440px;
+    min-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     margin-top: 72px;
+    font-weight: 500;
+    background-color: transparent;
 }
 
 .content_wrapper {
+    display: block;
+    position: relative;
     width: 1177px;
     margin: 0 auto;
 }
@@ -69,9 +104,10 @@ body, .wrapper {
 .main_menu_item {
     display: inline-block;
     float: left;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 33px;
     margin-right: 40px;
+    font-weight: 500;
 }
 
 .login_block {
@@ -81,7 +117,7 @@ body, .wrapper {
 }
 
 .login_link {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 33px;
 }
 
@@ -101,20 +137,19 @@ body, .wrapper {
 
 .main_slider {
     width: 1177px;
-    max-height: 900px;
-    height: 120vh;
     position: absolute;
     top: -72px;
-    background-image: url("../img/main_background_01.jpg");
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    background-repeat: no-repeat;
-    background-position: 190px 0;
 }
 
-.slide_item_text {
+slides_list {
+    
+}
+
+.slider_text {
     color: #C1C4D4;
     display: block;
     position: absolute;
@@ -122,7 +157,7 @@ body, .wrapper {
     font-size: 74px;
     text-transform: uppercase;
     width: 296px;
-    font-weight: bold;
+    font-weight: 900;
     line-height: 62px;
     margin-left: 67px;
 }
@@ -130,7 +165,7 @@ body, .wrapper {
 .slider_text_quotes {
     font-size: 74px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 900;
     line-height: 44px;
 }
 
@@ -159,7 +194,7 @@ body, .wrapper {
 .contacts_on_page_title {
     display: inline-block;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 15px;
 }
 
@@ -176,7 +211,7 @@ body, .wrapper {
 }
 
 .text_bold {
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .text_uppercase {
@@ -187,6 +222,7 @@ body, .wrapper {
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .contacts_on_page_text:last-of-type {
@@ -194,13 +230,15 @@ body, .wrapper {
 }
 
 .social_links_block {
+    display: block;
     position: absolute;
-    transform: rotate(90deg);
-    right: 48px;
-    top: 400px;
+    right: -30px;
+    top: 350px;
+    font-weight: 500;
 }
 
 .social_link {
+    writing-mode: tb-rl;
     display: inline-block;
     margin-right: 40px;
 }
@@ -228,6 +266,7 @@ body, .wrapper {
     content: 'next';
     color: #60626B;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .slide_changer:after {
@@ -238,6 +277,7 @@ body, .wrapper {
     content: 'prev';
     color: white;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .slide_stripe {
@@ -266,8 +306,14 @@ body, .wrapper {
     float: right;
     font-size: 20px;
     color: #60626B;
+    font-weight: 700;
 }
 
 .slider_counter_active {
     font-size: 35px;
+    font-weight: 700;
+}
+
+.slider_counter_average {
+    font-weight: 700;
 }
