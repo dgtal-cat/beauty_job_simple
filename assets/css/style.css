@@ -178,7 +178,7 @@ slides_list {
 
 .slider_text_quotes:before {
     content: '<';
-    color: #F14ABC;
+    color: #60626B;
     font-size: 100px;
     margin-right: 10px;
 }
@@ -187,7 +187,8 @@ slides_list {
     content: '>';
     font-size: 100px;
     margin-left: 10px;
-    color: #60626B;
+    color: #F14ABC;
+
 }
 
 .contacts_on_page {
@@ -275,26 +276,26 @@ slides_list {
     display: block;
 }
 
-.slide_changer:before {
+.slide_changer_next {
     display: block;
     position: absolute;
     right: 0;
     top: -34px;
-    content: 'next';
-    color: #60626B;
+    color: white;
     text-transform: uppercase;
     font-weight: 700;
+    cursor: pointer;
 }
 
-.slide_changer:after {
+.slide_changer_prev {
     display: block;
     position: absolute;
     right: 0;
     top: 18px;
-    content: 'prev';
-    color: white;
+    color: #60626B;
     text-transform: uppercase;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .slide_stripe {
@@ -340,4 +341,35 @@ slides_list {
 
 .slider_counter_average {
     font-weight: 700;
+}
+
+.main_slider_img_block {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-width: 1440px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slides_list {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 1000%;
+    height: 100%;
+    transition: left 1s ease;
+}
+
+.slide_item {
+    display: block;
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+
+.slide_item img {
+    width: 100%;
 }

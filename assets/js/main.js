@@ -1,24 +1,29 @@
-var block = document.getElementsByClassName('slogan_text')[0];
+const nextButton = document.getElementsByClassName('slide_changer_next')[0];
+const prevButton = document.getElementsByClassName('slide_changer_prev')[0];
+const slidesList = document.getElementsByClassName('slides_list')[0];
+const maxIndex = document.getElementsByClassName('slide_item').length;
 
-var initialText = block.innerHTML;
+let index = 0;
+console.log(index);
+console.log(maxIndex);
 
-var slideList = document.getElementsByClassName('slide_item');
-console.log(slideList);
-
-function changeSlide() {
-    for (i=0; i<slideList.length; i++) {
-        console.log(slideList[i].style.left);
-        console.log(slideList[i]);
-        slideList[i].style.left = '-100%';
-    }
-}
-
-/*function changeText () {
-    if (block.innerHTML !== 'pshe') {
-    block.innerHTML = 'pshe';
+nextButton.onclick = function () {
+    if (index < maxIndex) {
+        index = index + 1;
+        slidesList.style.left = '-' + index + '00%';
     } else {
-        block.innerHTML = initialText;
+        index = 0;
     }
-}*/
+    console.log('after click on NEXT index = ' + index);
+};
 
-block.onclick = changeSlide;
+prevButton.onclick = function () {
+    if (index = 1) {
+        index = maxIndex-1;
+        slidesList.style.left = '-' + index + '00%';
+    } else {
+        index = index-1;
+        slidesList.style.left = '-' + index + '00%';
+    }
+    console.log('after click on PREV index = ' + index);
+};
