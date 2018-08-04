@@ -373,3 +373,35 @@ slides_list {
 .slide_item img {
     width: 100%;
 }
+
+/*1400-1200px width styles*/
+@media only screen and (max-width: 1439px) {
+    .wrapper {
+        min-width: 1180px;
+    }
+
+    .main_slider_img_block {
+        min-width: 1180px;
+    }
+
+    .content_wrapper {
+        width: 920px;
+    }
+
+    .slider_counter_block_inside{
+        display: block;
+        margin-top: 8vh;
+    }
+
+    .slider_counter_block_outside {
+        display: none;
+    }
+
+    .side_bar_left {
+        display: none;
+    }
+
+    .side_bar_right {
+        display: none;
+    }
+}
