@@ -1,7 +1,7 @@
 @font-face {
     font-family: Mosk;
     src: url("../fonts/Mosk Medium 500.ttf");
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -50,33 +50,46 @@ ul li {
 
 body, .wrapper {
     background-color: #161618;
-    color: #E5E5E5;
-    font-weight: 500;
 }
 
 .wrapper {
     min-width: 1440px;
-    width: 100%;
     margin: 0 auto;
     position: relative;
-    margin-top: 72px;
-    font-weight: 500;
+    color: #E5E5E5;
+    font-weight: 700;
     background-color: transparent;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    min-height: 720px;
+}
+
+.side_bar_left {
+    min-width: 130px;
+    flex: 1;
+    height: 100%;
 }
 
 .content_wrapper {
     display: block;
     position: relative;
-    width: 1177px;
+    flex: 9;
+    max-width: 1180px;
     margin: 0 auto;
+}
+
+.side_bar_right {
+    min-width: 130px;
+    flex: 1;
+    height: 100%;
 }
 
 .header {
     width: 100%;
     height: 33px;
-    margin: 0 auto;
-    position: relative;
     z-index: 10;
+    margin-top: 8vh;
 }
 
 .header_left {
@@ -99,7 +112,7 @@ body, .wrapper {
     font-size: 16px;
     line-height: 33px;
     margin-right: 40px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .login_block {
@@ -127,7 +140,7 @@ body, .wrapper {
     content: '';
 }
 
-.main_slider_elements {
+.main_slider {
     width: 1177px;
     position: absolute;
     top: -72px;
@@ -137,11 +150,15 @@ body, .wrapper {
     right: 0;
 }
 
-.slider_text {
+slides_list {
+    
+}
+
+.slogan_text {
     color: #C1C4D4;
     display: block;
     position: absolute;
-    top: 360px;
+    top: 40vh;
     font-size: 74px;
     text-transform: uppercase;
     width: 296px;
@@ -175,7 +192,7 @@ body, .wrapper {
     font-size: 14px;
     display: block;
     position: absolute;
-    top: 560px;
+    top: 71vh;
     width: 120px;
 }
 
@@ -210,7 +227,7 @@ body, .wrapper {
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .contacts_on_page_text:last-of-type {
@@ -221,8 +238,8 @@ body, .wrapper {
     display: block;
     position: absolute;
     right: -30px;
-    top: 350px;
-    font-weight: 500;
+    top: 40vh;
+    font-weight: 700;
 }
 
 .social_link {
@@ -239,7 +256,7 @@ body, .wrapper {
     display: block;
     width: 100%;
     position: absolute;
-    top: 810px;
+    top: 90vh;
 }
 
 .slide_changer ul {
@@ -254,7 +271,7 @@ body, .wrapper {
     content: 'next';
     color: #60626B;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .slide_changer:after {
@@ -265,7 +282,7 @@ body, .wrapper {
     content: 'prev';
     color: white;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .slide_stripe {
@@ -279,14 +296,21 @@ body, .wrapper {
     border-bottom: #F14ABC solid 2px;
 }
 
-.slider_counter_block {
+.slider_counter_block_inside {
+    display: none;
     width: 130px;
     height: 50px;
-    vertical-align: center;
-    position: absolute;
-    left: -130px;
-    top: 310px;
-    border-bottom: #C4C4C4 solid 2px;;
+    left: 0;
+    margin-top: 35vh;
+    border-bottom: #C4C4C4 solid 2px;
+}
+
+.slider_counter_block_outside {
+    min-width: 130px;
+    width: 100%;
+    height: 50px;
+    border-bottom: #C4C4C4 solid 2px;
+    margin-top: 35vh;
 }
 
 .slider_counter_text_block {
@@ -304,26 +328,4 @@ body, .wrapper {
 
 .slider_counter_average {
     font-weight: 700;
-}
-
-.main_slider_img_block {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow:hidden
-}
-
-.slides_list {
-    width: 1000%;
-}
-
-.slides_list li {
-    display: inline-block;
-    width: 10%;
-}
-
-.slides_list img {
-    width: 100%;
 }

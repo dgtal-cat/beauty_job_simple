@@ -1,4 +1,4 @@
-var block = document.getElementsByClassName('slider_text')[0];
+var block = document.getElementsByClassName('slogan_text')[0];
 
 var initialText = block.innerHTML;
 
