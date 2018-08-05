@@ -4,18 +4,33 @@ const slidesList = document.getElementsByClassName('slides_list')[0];
 const maxIndex = document.getElementsByClassName('slide_item').length;
 const sliderCounterActive = document.getElementsByClassName('slider_counter_active');
 const sliderCounterAverage = document.getElementsByClassName('slider_counter_average');
+const sliderStripe = document.getElementsByClassName('slide_stripe_list')[0];
+const slideStripeItemsList = [];
+
+function slideStripeInit () {
+    for (i=0;i<maxIndex;i++) {
+        slideStripeItemsList.push(document.createElement('li'));
+        slideStripeItemsList[i].className = 'slide_stripe';
+        sliderStripe.appendChild(slideStripeItemsList[i]);
+    }
+    slideStripeItemsList[0].classList.add('slide_stripe_active');
+}
+
+slideStripeInit();
 
 let index = 1;
+
 for (i=0;i<sliderCounterActive.length;i++) {
     sliderCounterActive[i].innerHTML = '0' + index;
     sliderCounterAverage[i].innerHTML = '0' + maxIndex;
 }
 
-
 console.log(index);
 console.log(maxIndex);
 
-nextButton.onclick = function () {
+function nextSlide () {
+    slideStripeItemsList[index-1].classList.remove('slide_stripe_active');
+
     if (index < maxIndex) {
         slidesList.style.left = '-' + index + '00%';
         index = index + 1;
@@ -27,10 +42,13 @@ nextButton.onclick = function () {
         sliderCounterActive[i].innerHTML = '0' + index;
     }
     console.log('after click on NEXT index = ' + index);
-};
+    slideStripeItemsList[index-1].classList.add('slide_stripe_active');
+}
 
-prevButton.onclick = function () {
-    if (index == 1) {
+function prevSlide () {
+    slideStripeItemsList[index-1].classList.remove('slide_stripe_active');
+
+    if (index === 1) {
         index = maxIndex - 1;
     } else {
         index = index - 2;
@@ -41,4 +59,8 @@ prevButton.onclick = function () {
         sliderCounterActive[i].innerHTML = '0' + index;
     }
     console.log('after click on PREV index = ' + index);
-};
+    slideStripeItemsList[index-1].classList.add('slide_stripe_active');
+}
+
+nextButton.onclick = nextSlide;
+prevButton.onclick = prevSlide;

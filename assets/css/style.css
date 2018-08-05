@@ -404,4 +404,63 @@ slides_list {
     .side_bar_right {
         display: none;
     }
+
+    .content_wrapper {
+        min-height: 720px;
+    }
+
+    .slide_item img {
+        height: max-content;
+        width: auto;
+    }
+
+    body {
+        width: 1200px;
+        height: max-content;
+        background-color: black;
+    }
+}
+
+@media only screen and (max-height: 900px) {
+    .header {
+        margin-top: 6vh;
+    }
+
+    .slogan_text {
+        top: 34vh;
+    }
+
+    .contacts_on_page {
+        top: 66vh;
+    }
+
+    .slide_changer {
+        top: 88vh;
+    }
+}
+
+@media only screen and (max-height: 720px) {
+    .header {
+        margin-top: 3%;
+    }
+
+    .slogan_text {
+        top: 34%;
+    }
+
+    .contacts_on_page {
+        top: 66%;
+    }
+
+    .slide_changer {
+        top: 88%;
+    }
+
+    .social_links_block {
+        top: 40%;
+    }
+
+    .slider_counter_block_outside {
+        margin-top: 100%;
+    }
 }
