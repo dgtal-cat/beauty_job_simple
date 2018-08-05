@@ -292,21 +292,34 @@ slides_list {
     position: absolute;
     right: 0;
     top: 18px;
-    color: #60626B;
+    color: white;
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
 }
 
+.no_select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 .slide_stripe {
     display: inline-block;
     width: 25%;
-    border-bottom: #C4C4C4 solid 2px;
+    border-bottom: rgba(208, 178, 200, 0.62) solid 2px;
     float: left;
 }
 
 .slide_stripe_active {
-    border-bottom: #F14ABC solid 2px;
+    background: linear-gradient(90deg, #a7628e9e, #F14ABC, #a7628e9e);
+    border: none;
+    height: 2px;
+    box-shadow: 0 0 30px 1px #ff58ca;
 }
 
 .slider_counter_block_inside {

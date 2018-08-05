@@ -12,7 +12,9 @@ function slideStripeInit () {
         slideStripeItemsList.push(document.createElement('li'));
         slideStripeItemsList[i].className = 'slide_stripe';
         sliderStripe.appendChild(slideStripeItemsList[i]);
+        slideStripeItemsList[i].style.width = 100/maxIndex + '%';
     }
+
     slideStripeItemsList[0].classList.add('slide_stripe_active');
 }
 
