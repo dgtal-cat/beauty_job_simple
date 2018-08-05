@@ -181,6 +181,7 @@ slides_list {
     color: #60626B;
     font-size: 100px;
     margin-right: 10px;
+    text-shadow: 0 0px 15px #ffffff70;
 }
 
 .slider_text_quotes:after {
@@ -188,6 +189,7 @@ slides_list {
     font-size: 100px;
     margin-left: 10px;
     color: #F14ABC;
+    text-shadow: 0 0px 15px #ffffff70;
 
 }
 
@@ -298,6 +300,10 @@ slides_list {
     cursor: pointer;
 }
 
+.slide_changer_button:hover {
+    text-shadow: 0 1px 25px white;
+}
+
 .no_select {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -320,6 +326,11 @@ slides_list {
     border: none;
     height: 2px;
     box-shadow: 0 0 30px 1px #ff58ca;
+    -webkit-transition: box-shadow 1s ease;
+    -moz-transition: box-shadow 1s ease;
+    -ms-transition: box-shadow 1s ease;
+    -o-transition: box-shadow 1s ease;
+    transition: box-shadow 1s ease;
 }
 
 .slider_counter_block_inside {
@@ -350,6 +361,7 @@ slides_list {
 .slider_counter_active {
     font-size: 35px;
     font-weight: 700;
+    text-shadow: 0 0px 15px #ffffff70;
 }
 
 .slider_counter_average {
