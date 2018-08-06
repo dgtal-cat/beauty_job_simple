@@ -72,6 +72,12 @@ body, .wrapper {
     height: 100%;
 }
 
+.side_bar_left_pad {
+    width: 100%;
+    height: 33px;
+    margin-top: 7vh;
+}
+
 .content_wrapper {
     display: block;
     position: relative;
@@ -90,7 +96,7 @@ body, .wrapper {
     width: 100%;
     height: 33px;
     z-index: 10;
-    margin-top: 8vh;
+    margin-top: 7vh;
 }
 
 .header_left {
@@ -156,17 +162,24 @@ slides_list {
     
 }
 
+.logo_block {
+    width: 322px;
+    height: 129px;
+    position: absolute;
+    top: 15vh;
+    left: -13px;
+}
+
 .slogan_text {
     color: #C1C4D4;
     display: block;
     position: absolute;
-    top: 40vh;
+    top: 46vh;
     font-size: 74px;
     text-transform: uppercase;
     width: 296px;
     font-weight: 900;
     line-height: 62px;
-    margin-left: 67px;
 }
 
 .slider_text_quotes {
@@ -189,16 +202,25 @@ slides_list {
     font-size: 100px;
     margin-left: 10px;
     color: #F14ABC;
-    text-shadow: 0 0px 15px #ffffff70;
-
+    text-shadow: 0 0 15px #ffffff70;
 }
 
+
 .contacts_on_page {
-    font-size: 14px;
-    display: block;
+    font-size: 18px;
+    display: flex;
     position: absolute;
-    top: 71vh;
-    width: 120px;
+    top: 76vh;
+    width: 348px;
+}
+
+.contacts_on_page_block_1 {
+    flex: 2;
+}
+
+.contacts_on_page_block_2 {
+    flex: 3;
+    padding-left: 40px;
 }
 
 .contacts_on_page_title {
@@ -334,11 +356,10 @@ slides_list {
 }
 
 .slider_counter_block_inside {
-    display: none;
-    width: 130px;
+    width: 84px;
     height: 50px;
     left: 0;
-    margin-top: 35vh;
+    margin-top: 23vh;
     border-bottom: #C4C4C4 solid 2px;
 }
 
@@ -347,7 +368,7 @@ slides_list {
     width: 100%;
     height: 50px;
     border-bottom: #C4C4C4 solid 2px;
-    margin-top: 35vh;
+    margin-top: 23vh;
 }
 
 .slider_counter_text_block {
@@ -413,22 +434,13 @@ slides_list {
         width: 920px;
     }
 
-    .slider_counter_block_inside{
-        display: block;
-        margin-top: 8vh;
-    }
-
-    .slider_counter_block_outside {
-        display: none;
-    }
-
-    .side_bar_left {
+    /*.side_bar_left {
         display: none;
     }
 
     .side_bar_right {
         display: none;
-    }
+    }*/
 
     .content_wrapper {
         min-height: 720px;
@@ -446,7 +458,8 @@ slides_list {
     }
 }
 
-@media only screen and (max-height: 900px) {
+/*
+@media only screen and (max-height: 899px) {
     .header {
         margin-top: 6vh;
     }
@@ -484,8 +497,4 @@ slides_list {
     .social_links_block {
         top: 40%;
     }
-
-    .slider_counter_block_outside {
-        margin-top: 100%;
-    }
-}
+}*/
