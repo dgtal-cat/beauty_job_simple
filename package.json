@@ -1,0 +1,24 @@
+{
+  "name": "beauty_job_simple",
+  "version": "1.0.0",
+  "description": "design layout on Figma (by Delf):\r https://www.figma.com/file/QRPJRh1wQ5sRrmwXe7HxRh1P/BeautyJob?node-id=138%3A2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgtal-cat/beauty_job_simple.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgtal-cat/beauty_job_simple/issues"
+  },
+  "homepage": "https://github.com/dgtal-cat/beauty_job_simple#readme",
+  "devDependencies": {
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}

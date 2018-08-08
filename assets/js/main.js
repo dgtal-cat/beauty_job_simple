@@ -2,8 +2,8 @@ const nextButton = document.getElementsByClassName('slide_changer_next')[0];
 const prevButton = document.getElementsByClassName('slide_changer_prev')[0];
 const slidesList = document.getElementsByClassName('slides_list')[0];
 const maxIndex = document.getElementsByClassName('slide_item').length;
-const sliderCounterActive = document.getElementsByClassName('slider_counter_active');
-const sliderCounterAverage = document.getElementsByClassName('slider_counter_average');
+const sliderCounterActive = document.getElementsByClassName('main_slider_counter_active');
+const sliderCounterAverage = document.getElementsByClassName('main_slider_counter_average');
 const sliderStripe = document.getElementsByClassName('slide_stripe_list')[0];
 const slideStripeItemsList = [];
 
