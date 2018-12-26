@@ -188,7 +188,7 @@ body, .wrapper {
     font-size: 18px;
     display: flex;
     position: absolute;
-    top: 76%;
+    top: 80%;
     width: 348px;
 }
 
@@ -330,7 +330,7 @@ body, .wrapper {
     transition: box-shadow 2s ease;
 }
 
-.slider_counter_block_inside {
+.slider_counter_block {
     position: relative;
     width: 84px;
     height: 50px;
@@ -339,13 +339,14 @@ body, .wrapper {
     border-bottom: #C4C4C4 solid 2px;
 }
 
-.slider_counter_block_outside {
-    position: relative;
-    min-width: 130px;
-    width: 100%;
+.slider_counter_block:before {
+    display: block;
+    position: absolute;
+    width: 1000px;
     height: 50px;
+    left: -1000px;
     border-bottom: #C4C4C4 solid 2px;
-    top: 23%;
+    content: '';
 }
 
 .slider_counter_text_block {
