@@ -2,8 +2,8 @@ const nextButton = document.getElementsByClassName('slide_changer_next')[0];
 const prevButton = document.getElementsByClassName('slide_changer_prev')[0];
 const slidesList = document.getElementsByClassName('slides_list')[0];
 const maxIndex = document.getElementsByClassName('slide_item').length;
-const sliderCounterActive = document.getElementsByClassName('slider_counter_active');
-const sliderCounterAverage = document.getElementsByClassName('slider_counter_average');
+const sliderCounterActive = document.getElementsByClassName('slider_counter_active')[0];
+const sliderCounterAverage = document.getElementsByClassName('slider_counter_average')[0];
 const sliderStripe = document.getElementsByClassName('slide_stripe_list')[0];
 const slideStripeItemsList = [];
 
@@ -22,10 +22,8 @@ slideStripeInit();
 
 let index = 1;
 
-for (i=0;i<sliderCounterActive.length;i++) {
-    sliderCounterActive[i].innerHTML = '0' + index;
-    sliderCounterAverage[i].innerHTML = '0' + maxIndex;
-}
+sliderCounterActive.innerHTML = '0' + index;
+sliderCounterAverage.innerHTML = '0' + maxIndex;
 
 console.log(index);
 console.log(maxIndex);
@@ -40,9 +38,7 @@ function nextSlide () {
         slidesList.style.left = '0';
         index = 1;
     }
-    for (i=0;i<sliderCounterActive.length;i++) {
-        sliderCounterActive[i].innerHTML = '0' + index;
-    }
+    sliderCounterActive.innerHTML = '0' + index;
     console.log('after click on NEXT index = ' + index);
     slideStripeItemsList[index-1].classList.add('slide_stripe_active');
 }
@@ -57,12 +53,11 @@ function prevSlide () {
     }
     slidesList.style.left = '-' + index + '00%';
     index = index + 1;
-    for (i=0;i<sliderCounterActive.length;i++) {
-        sliderCounterActive[i].innerHTML = '0' + index;
-    }
+    sliderCounterActive.innerHTML = '0' + index;
     console.log('after click on PREV index = ' + index);
     slideStripeItemsList[index-1].classList.add('slide_stripe_active');
 }
 
+setInterval(nextSlide, 3000);
 nextButton.onclick = nextSlide;
 prevButton.onclick = prevSlide;
