@@ -58,6 +58,6 @@ function prevSlide () {
     slideStripeItemsList[index-1].classList.add('slide_stripe_active');
 }
 
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 5000);
 nextButton.onclick = nextSlide;
 prevButton.onclick = prevSlide;

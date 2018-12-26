@@ -1,40 +1,19 @@
-@font-face {
-    font-family: Mosk;
-    src: url("../fonts/Mosk Medium 500.ttf");
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Mosk;
-    src: url("../fonts/Mosk Semi-Bold 600.ttf");
-    font-weight: 600;
-    font-style: normal;
-}
-
 @font-face{
     font-family: 'Mosk';
-    src: url('../fonts/Mosk Normal 400.ttf');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face{
-    font-family: 'Mosk';
-    src: url('../fonts/Mosk Bold 700.ttf');
+    src: url('../fonts/Mosk Bold 700.woff') format('woff'), url('../fonts/Mosk Bold 700.ttf') format('truetype'), url('../fonts/Mosk Bold 700.svg') format('svg');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Mosk';
-    src: url('../fonts/Mosk Ultra-Bold 900.ttf');
+    src: url('../fonts/Mosk Ultra-Bold 900.woff') format('woff'), url('../fonts/Mosk Ultra-Bold 900.ttf') format('truetype'), url('../fonts/Mosk Ultra-Bold 900.svg') format('svg');
     font-weight: 900;
     font-style: normal;
 }
 
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
-    font-family: Mosk, Arial;
+    font-family: Mosk, Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -145,6 +124,13 @@ body, .wrapper {
     margin-top: 8px;
 }
 
+.cart_link {
+    display: block;
+    width: 20px;
+    height: 19px;
+    background-image: url('../svg/cart.svg');
+}
+
 .menu_item_active:after {
     display: block;
     width: 65%;
@@ -159,6 +145,7 @@ body, .wrapper {
     position: absolute;
     top: 15%;
     left: -13px;
+    background-image: url("../svg/logo.svg");
 }
 
 .slogan_text {
@@ -340,11 +327,7 @@ body, .wrapper {
     border: none;
     height: 2px;
     box-shadow: 0 0 30px 1px #ff58ca;
-    -webkit-transition: box-shadow 1s ease;
-    -moz-transition: box-shadow 1s ease;
-    -ms-transition: box-shadow 1s ease;
-    -o-transition: box-shadow 1s ease;
-    transition: box-shadow 1s ease;
+    transition: box-shadow 2s ease;
 }
 
 .slider_counter_block_inside {
@@ -400,7 +383,7 @@ body, .wrapper {
     left: 0;
     width: 1000%;
     height: 100%;
-    transition: left 1s ease;
+    transition: left 2s ease;
 }
 
 .slide_item {
@@ -410,7 +393,7 @@ body, .wrapper {
     height: 100%;
 }
 
-.slide_item img {
+.slide_item-img {
     width: 100%;
 }
 
