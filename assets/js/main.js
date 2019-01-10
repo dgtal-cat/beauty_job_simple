@@ -1,3 +1,5 @@
+'use strict';
+
 const nextButton = document.getElementsByClassName('slide_changer_next')[0];
 const prevButton = document.getElementsByClassName('slide_changer_prev')[0];
 const slidesList = document.getElementsByClassName('slides_list')[0];
@@ -8,7 +10,7 @@ const sliderStripe = document.getElementsByClassName('slide_stripe_list')[0];
 const slideStripeItemsList = [];
 
 function slideStripeInit () {
-    for (i=0;i<maxIndex;i++) {
+    for (let i=0;i<maxIndex;i++) {
         slideStripeItemsList.push(document.createElement('li'));
         slideStripeItemsList[i].className = 'slide_stripe';
         sliderStripe.appendChild(slideStripeItemsList[i]);

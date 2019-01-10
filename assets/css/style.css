@@ -12,7 +12,7 @@
     font-style: normal;
 }
 
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+body {
     font-family: Mosk, Arial, sans-serif;
     font-weight: 700;
 }
@@ -33,7 +33,7 @@ ul li {
 }
 
 body, .wrapper {
-    background-color: #161618;
+    background-color: #0f0f11;
 }
 
 .wrapper {
@@ -67,7 +67,6 @@ body, .wrapper {
     position: relative;
     flex: 9;
     max-width: 1180px;
-    min-width: 940px;
     margin: 0 auto;
     height: 100%;
 }
@@ -392,10 +391,14 @@ body, .wrapper {
     float: left;
     width: 10%;
     height: 100%;
+    position: relative;
 }
 
 .slide_item-img {
-    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 120px;
+
 }
 
 /*1400-1200px width styles*/
